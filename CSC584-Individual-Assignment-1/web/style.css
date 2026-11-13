@@ -1,0 +1,134 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08-Nov-2026, 11:40:36
+    Author     : Huawei
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background: #e2e8f0;
+    background: linear-gradient(135deg, #e6ede6 0%, #cbd5c0 50%, #b3c2a7 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #2d3748;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(45, 55, 72, 0.08);
+    width: 100%;
+    max-width: 550px;
+    padding: 35px 30px;
+}
+
+h2 {
+    color: #3b5249;
+    text-align: center;
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.form-group { margin-bottom: 16px; }
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #516b5e;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background-color: rgba(255, 255, 255, 0.85) !important;
+    border: 1.5px solid #c2d1c5 !important;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    color: #2b3a33 !important;
+    box-sizing: border-box;
+    transition: all 0.25s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #516b5e !important;
+    box-shadow: 0 0 0 4px rgba(81, 107, 94, 0.15) !important;
+}
+
+button, .back-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #516b5e 0%, #3b5249 100%);
+    color: #ffffff;
+    padding: 14px;
+    border: 2px solid #ffffff !important;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(59, 82, 73, 0.25);
+    transition: all 0.25s ease;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+button:hover, .back-btn:hover {
+    background: linear-gradient(135deg, #3b5249 0%, #2b3a33 100%);
+    transform: translateY(-2px);
+}
+
+.profile-card p {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #d4ded6;
+    margin-bottom: 12px;
+    color: #2b3a33;
+}
+.profile-card strong { color: #516b5e; }
+
+.avatar-container {
+    text-align: center !important;
+    margin-bottom: 18px !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.avatar-container img,
+.profile-avatar {
+    width: 110px !important;
+    height: 110px !important;
+    max-width: 110px !important;
+    max-height: 110px !important;
+    border-radius: 50% !important; 
+    object-fit: cover !important;  
+    
+    border: 3px solid #ffffff !important;
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.5) !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+

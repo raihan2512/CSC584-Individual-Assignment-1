@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personal Profile Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="avatar-container">
+                <img src="images/profile.jpg" alt="Profile Picture" class="profile-avatar">
+            </div>
+            
+            <h2>Personal Profile Registration</h2>
+            <form action="ProfileServlet" method="post">
+                
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Amin bin Abu" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" placeholder="e.g. 2020123456" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="programme">Programme:</label>
+                    <input type="text" id="programme" name="programme" placeholder="e.g. CS240" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" id="email" name="email" placeholder="e.g. _____@gmail.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="hobbies">Hobbies:</label>
+                    <input type="text" id="hobbies" name="hobbies" placeholder="e.g. Reading, hiking" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="bio">Short Self-Introduction:</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="A Information Technology student at UiTM Shah Alam" required></textarea>
+                </div>
+                
+                <button type="submit">Submit</button> 
+            </form>
+        </div>
+    </body>
+</html>
